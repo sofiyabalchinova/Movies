@@ -1,13 +1,16 @@
 {
   "name": "react_movies",
   "private": true,
+  "homepage": "https://sofiyabalchinova.github.io/Movies/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
